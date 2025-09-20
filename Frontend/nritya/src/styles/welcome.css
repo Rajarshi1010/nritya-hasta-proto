@@ -1,0 +1,123 @@
+/* WelcomePage.css */
+
+/* Global layout */
+.welcome-page {
+  min-height: 100vh;
+  background: #000;
+  color: #f3f4f6; /* light gray */
+  display: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+/* Header */
+.welcome-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4rem;
+  gap: 2rem;
+  height: 100vh;
+  overflow: hidden;
+  text-align: left;
+
+}
+
+.header-text {
+  position: absolute;
+  z-index: 1000;
+}
+
+.welcome-header h1 {
+  font-family: "Yatra One", system-ui;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #f97316; /* orange-500 */
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.welcome-header p {
+  font-family: "Alan Sans", sans-serif;
+  font-size: 1.125rem;
+  color: #d1d5db; /* gray-300 */
+  max-width: 40rem;
+}
+
+/* Image on the right with fade */
+.welcome-hero {
+  position: relative;
+  width: 24rem;
+  height: 24rem;
+}
+
+.welcome-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  opacity: 0.8;
+}
+
+/* Feature & aside sections */
+
+.section-card {
+  background: #111827; /* gray-900 */
+  border: 1px solid #1f2937; /* gray-800 */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6vh;
+  text-align: left;
+}
+
+.section-card h2 {
+  font-family: "Yatra One", system-ui;
+  font-weight: 600;
+  color: #fb923c; /* orange-400 */
+  margin-bottom: 1rem;
+}
+
+.section-card p,
+.section-card li {
+  font-family: "Alan Sans", sans-serif;
+  color: #d1d5db; /* gray-300 */
+  font-size: 0.875rem;
+}
+
+.section-card img {
+  height: 30vh;
+  border-radius: 2vh;
+}
+
+/* Buttons */
+.button-primary {
+  margin-top: 0;
+  padding: 0.75rem 1.5rem;
+  background: #f97316; /* orange-500 */
+  color: #000;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  border: none;
+  transition: background 0.3s ease;
+  width: max-content;
+  align-self: flex-end;
+}
+
+.button-primary:hover {
+  background: #fb923c; /* orange-400 */
+}
+
+/* Footer */
+.welcome-footer {
+  margin-top: 4rem;
+  color: #6b7280; /* gray-500 */
+  font-size: 0.875rem;
+}
