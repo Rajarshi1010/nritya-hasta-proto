@@ -1,0 +1,62 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #000;
+  padding: 20px;
+}
+
+.media-container {
+  width: 640px;
+  height: 480px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container {
+  width: 640px;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.drag-drop {
+  width: 640px;
+  height: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  border: none;
+}
+
+.record {
+  display: flex;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.result {
+  width: 60%;
+  height: 50%;
+  align-self: center;
+}
